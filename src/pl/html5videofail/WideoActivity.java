@@ -44,10 +44,6 @@ public class WideoActivity extends Activity {
 			}
 		});
 
-		if (savedInstanceState == null) {
-			webView.loadUrl("file:///android_asset/index.html");
-		} else {
-			webView.restoreState(savedInstanceState);
-		}
+		webView.loadUrl("file:///android_asset/index.html");
 	}
 }
